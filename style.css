@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.wrapper{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text{
+    flex-basis: 45%;
+}
+.all-images{
+    height: 80vh;
+    display: flex;
+}
+.small-images img{
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.small-images img:hover{
+    opacity: 1;
+}
+.main-images img{
+    height: 100%;
+}
+p{
+    margin-bottom: 20px;
+}
+.rating{
+    display: flex;
+    height: 16px;
+}
+.rating .fa{
+    color: #008000;
+}
+.rating .fas{
+    color: #008000;
+}
+.brand{
+    background-color: #008800;
+    width: fit-content;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 5px;
+    border-radius: 5%;
+}
+h2{
+    font-size: 35px;
+    color:#ff00b9;
+}
+h3{
+    font-size: 18px;
+    color:#ff8800;
+}
+.review{
+    background-color: #008800;
+    color:#fff;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.review .fa{
+    counter-reset: #fff;
+}
+.price{
+    color:rgb(73, 7, 128);
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.price-box{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+button{
+    width: 150px;
+    color:#fff;
+    font-size: 16px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #ff7b00fa;
+}
+button .fa{
+     margin-right: 10px;
+}
+strike{
+    color:red;
+    font-weight:bold;
+}
+.buy{
+    background-color: #883600;
+}
+@media only screen and (max-width:1200px){
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+        padding: 5% 0;
+    }
+    .text{
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .all-images{
+        flex-direction: column;
+        height: auto;
+    }
+    .small-images{
+        flex-direction: row;
+        justify-content: space-evenly;
+        order:1;
+    }
+    .product-box{
+        width: 100%;
+    }
+    .main-images img{
+        width: 100%;
+    }
+    .small-images img{
+        width: 20%;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
